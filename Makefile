@@ -90,7 +90,7 @@ DEVICE?=	A10
 COMSPEED?=	115200
 UEFI?=		arm dvd serial vga vm
 ZFS?=		# empty
-GITBASE?=	https://github.com/opnsense
+GITBASE?=	https://github.com/kirishree
 MIRRORS?=	https://opnsense.c0urier.net \
 		http://mirrors.nycbug.org/pub/opnsense \
 		http://mirror.wdc1.us.leaseweb.net/opnsense \
@@ -106,11 +106,11 @@ STAGEDIRPREFIX?=/usr/obj
 EXTRABRANCH?=	# empty
 
 
-COREBRANCH?=	stable/${ABI}
+COREBRANCH?=	master
 COREDIR?=	${ROOTDIR}/core
 COREENV?=	CORE_PHP=${PHP} CORE_ABI=${ABI} CORE_PYTHON=${PYTHON}
 
-PLUGINSBRANCH?=	stable/${ABI}
+PLUGINSBRANCH?=	master
 PLUGINSDIR?=	${ROOTDIR}/plugins
 PLUGINSENV?=	PLUGIN_PHP=${PHP} PLUGIN_ABI=${ABI} PLUGIN_PYTHON=${PYTHON}
 
@@ -122,7 +122,7 @@ PORTSREFURL?=	https://git.FreeBSD.org/ports.git
 PORTSREFDIR?=	${ROOTDIR}/freebsd-ports
 PORTSREFBRANCH?=main
 
-SRCBRANCH?=	stable/${ABI}
+SRCBRANCH?=	master
 SRCDIR?=	${ROOTDIR}/src
 
 # A couple of meta-targets for easy use and ordering:
