@@ -76,7 +76,7 @@ _CONFIGDIR=	${DIR:C/\/build\.conf$//}
 
 # Bootstrap the build options if not set:
 
-NAME?=		OPNsense
+NAME?=		ReachGuard
 TYPE?=		${NAME:tl}
 SUFFIX?=	# empty
 FLAVOUR?=	OpenSSL LibreSSL # first one is default
